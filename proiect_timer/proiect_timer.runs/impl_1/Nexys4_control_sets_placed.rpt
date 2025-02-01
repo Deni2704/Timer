@@ -1,0 +1,132 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat May 27 04:21:52 2023
+| Host         : Denisa running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Nexys4_control_sets_placed.rpt
+| Design       : Nexys4
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    63 |
+| Unused register locations in slices containing registers |   368 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           45 |
+|      2 |            1 |
+|      3 |            5 |
+|      4 |            3 |
+|      8 |            2 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              48 |           25 |
+| No           | No                    | Yes                    |              79 |           42 |
+| No           | Yes                   | No                     |             146 |           48 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              31 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+---------------+-------------------------------------------+------------------+----------------+
+|                Clock Signal                | Enable Signal |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++--------------------------------------------+---------------+-------------------------------------------+------------------+----------------+
+|  numara_secunde/count_reg[5]_LDC_i_1_n_0   |               | numara_secunde/count_reg[5]_LDC_i_2_n_0   |                1 |              1 |
+|  numara_secunde/count_reg[1]_LDC_i_1_n_0   |               | numara_secunde/count_reg[1]_LDC_i_2_n_0   |                1 |              1 |
+|  numara_secunde/count_reg[2]_LDC_i_1_n_0   |               | numara_secunde/count_reg[2]_LDC_i_2_n_0   |                1 |              1 |
+|  numara_secunde/count_reg[4]_LDC_i_1_n_0   |               | numara_secunde/count_reg[4]_LDC_i_2_n_0   |                1 |              1 |
+|  numara_secunde/count_reg[3]_LDC_i_1_n_0   |               | numara_secunde/count_reg[3]_LDC_i_2_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[0]_LDC_i_1_n_0   |                1 |              1 |
+|  numara_minute/count_reg[1]_LDC_i_1__0_n_0 |               | numara_minute/count_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |
+|  CU/count_enable_reg_i_2_n_0               |               |                                           |                1 |              1 |
+|  CU/count_mode_reg_i_2_n_0                 |               |                                           |                1 |              1 |
+|  numara_minute/count_reg[0]_LDC_i_1__0_n_0 |               | numara_minute/count_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |
+|  CU/led_alarm_reg_i_2_n_0                  |               |                                           |                1 |              1 |
+|  numara_minute/count_reg[7]_LDC_i_1_n_0    |               | numara_minute/count_reg[7]_LDC_i_2_n_0    |                1 |              1 |
+|  numara_minute/count_reg[2]_LDC_i_1__0_n_0 |               | numara_minute/count_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |
+|  numara_minute/count_reg[5]_LDC_i_1__0_n_0 |               | numara_minute/count_reg[5]_LDC_i_2__0_n_0 |                1 |              1 |
+|  numara_minute/count_reg[6]_LDC_i_1_n_0    |               | numara_minute/count_reg[6]_LDC_i_2_n_0    |                1 |              1 |
+|  numara_minute/count_reg[3]_LDC_i_1__0_n_0 |               | numara_minute/count_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |
+|  numara_minute/count_reg[4]_LDC_i_1__0_n_0 |               | numara_minute/count_reg[4]_LDC_i_2__0_n_0 |                1 |              1 |
+|  numara_secunde/count_reg[0]_LDC_i_1_n_0   |               | numara_secunde/count_reg[0]_LDC_i_2_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[4]_LDC_i_2_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[5]_LDC_i_1_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[1]_LDC_i_1_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[2]_LDC_i_1_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[1]_LDC_i_2_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[2]_LDC_i_2_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[5]_LDC_i_2_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[4]_LDC_i_1_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[3]_LDC_i_1_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[3]_LDC_i_2_n_0   |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[1]_LDC_i_1__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[0]_LDC_i_1__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[7]_LDC_i_1_n_0    |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[2]_LDC_i_1__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[5]_LDC_i_1__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[6]_LDC_i_1_n_0    |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[7]_LDC_i_2_n_0    |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[3]_LDC_i_1__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[4]_LDC_i_1__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[5]_LDC_i_2__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[6]_LDC_i_2_n_0    |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[4]_LDC_i_2__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_minute/count_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |
+|  div_clk_BUFG                              |               | numara_secunde/count_reg[0]_LDC_i_2_n_0   |                1 |              1 |
+|  CU/ssd_min_reg_i_2_n_0                    |               |                                           |                1 |              2 |
+|  numara_secunde/E[0]                       |               |                                           |                1 |              3 |
+|  bottom_button/CD/divided_clk              |               |                                           |                1 |              3 |
+|  center_button/CD/divided_clk              |               |                                           |                2 |              3 |
+|  right_button/CD/divided_clk               |               |                                           |                1 |              3 |
+|  upper_button/CD/divided_clk               |               |                                           |                2 |              3 |
+|  numara_secunde/sec_reg[2]_0[0]            |               | CU/ssd_sec_reg_0[0]                       |                1 |              4 |
+|  numara_minute/min_reg[6]_1[0]             |               |                                           |                2 |              4 |
+|  numara_minute/E[0]                        |               | CU/AR[0]                                  |                1 |              4 |
+|  div_clk_BUFG                              |               | center_button/borrow_s_reg                |                2 |              8 |
+|  div_clk_BUFG                              |               | center_button/X_reg_3                     |                3 |              8 |
+|  clk_IBUF_BUFG                             |               |                                           |               12 |             24 |
+|  clk_IBUF_BUFG                             |               | bottom_button/CD/count[31]_i_1__2_n_0     |                8 |             31 |
+|  clk_IBUF_BUFG                             |               | center_button/CD/count[31]_i_1__0_n_0     |                8 |             31 |
+|  clk_IBUF_BUFG                             |               | right_button/CD/count[31]_i_1__3_n_0      |                8 |             31 |
+|  clk_IBUF_BUFG                             |               | upper_button/CD/count[31]_i_1__1_n_0      |                8 |             31 |
+|  clk_IBUF_BUFG                             | CU/count      | CU/count[31]_i_1_n_0                      |                8 |             31 |
+|  clk_IBUF_BUFG                             |               | center_button/AR[0]                       |                9 |             35 |
++--------------------------------------------+---------------+-------------------------------------------+------------------+----------------+
+
+
